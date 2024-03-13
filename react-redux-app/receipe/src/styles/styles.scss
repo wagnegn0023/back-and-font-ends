@@ -1,0 +1,55 @@
+// component styles
+// navbar
+
+:root{
+    --background-color:#fff;
+    --background-light:#fff;
+    --background-dark:#ecc;
+    --shadow-color:rgba(61, 54, 54, 0.5);
+    --primary-color:rgb(255,0,86);
+    --text-color:#0A0A0A;
+    --text-light:#575757;
+    --text-white:#fff;
+    --text-size:16px;
+    --animation-speed:1;
+}
+@function getAnimationDuration($duration:number){
+    @return calc($duration* var(--animation-speed));
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-size: var(--text-size);
+    background: var(--background-light);
+}
+
+
+.container{
+    padding-inline: 15vw;
+}
+.main{
+    padding-block: 3vw;
+    margin-top: 3em;
+}
+@import "./__animations.scss";
+@import "./__navbar.scss";
+@import "./__sidebar.scss";
+@import "./__mainSection.scss";
+@media screen and (max-width:768px){
+    .navbar{
+
+        .nav-links{
+            display: none;
+        }
+        .sidebar-button{
+            display: block;
+        }
+    }
+}
+
+
+

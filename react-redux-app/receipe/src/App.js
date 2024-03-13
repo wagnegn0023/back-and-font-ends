@@ -1,12 +1,14 @@
 import './App.scss';
+import MainSection from './components/MainSection';
 import Navbar from './components/navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <Navbar/>
-      </header>
+      <div className="container main">
+        <MainSection/>
+      </div>
     </div>
   );
 }

@@ -21,6 +21,9 @@ function Navbar(){
             icon:faCog
         }
     ]
+    function closeSidebar(){
+        setShowSidebar(false)
+    }
     return(
         <div>
             <div className="navbar container">
@@ -41,7 +44,7 @@ function Navbar(){
                 <div className="sidebar"></div>
             </div>
         </div>
-        <Sidebar links={links}/>
+        {showSidebar && <Sidebar close={closeSidebar} links={links}/>}
         </div>
     )
 }

@@ -1,31 +1,3 @@
-// component styles
-// navbar
-
-:root{
-    --background-color:#fff;
-    --background-light:#fff;
-    --background-dark:#ecc;
-    --shadow-color:rgba(0,0,0,0.2);
-    --primary-color:rgb(255,0,86);
-    --text-color:#0A0A0A;
-    --text-light:#575757;
-    --text-size:16px;
-    --animation-speed:1;
-}
-@function getAnimationDuration($duration:number){
-    @return calc($duration* var(--animation-speed));
-}
-
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-}
-body{
-    font-size: var(--text-size);
-    background: var(--background-light);
-}
-
 .navbar{
     height: 55px;
     background-color: var(--background-color);
@@ -121,40 +93,3 @@ body{
     }
 }
 }
-.sidebar-list{
-    color: var(--text-color);
-    position: fixed;
-    left: 0;top: 30px;
-    margin-top: 1.2em;
-    height: 100vh;
-    width: 250px;
-    text-align: start;
-    box-shadow: 0 0 0 1400px rgba(199, 199, 199, 0.2);
-    .sidebar-link{
-        background-color: var(--background-color);
-        display: block;
-        color: var(--text-color);
-        margin-bottom: 15px;
-        margin-left: 5px;
-        border-left: #fff;
-    }
-}
-
-
-.container{
-    padding-inline: 15vw;
-}
-@media screen and (max-width:768px){
-    .navbar{
-
-        .nav-links{
-            display: none;
-        }
-        .sidebar-button{
-            display: block;
-        }
-    }
-}
-
-
-
