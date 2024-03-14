@@ -1,4 +1,9 @@
+import CustomImage from "./customImage"
+
 export default function MainSection(){
+    const images=[
+        "../img/img-1.jpg"
+    ]
     return(
         <div className="mainSection">
             <div className="col">
@@ -6,8 +11,16 @@ export default function MainSection(){
                 <p className="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nemo voluptates. Quas porro debitis nam, esse aliquid mollitia doloribus repellendus animi obcaecati! Ea obcaecati facere quia dolor consectetur excepturi modi.</p>
                 <button className="btn">Explore Now</button>
             </div>
-            <div className="col">
-                col2
+            <div className="col gallery">
+                <CustomImage/>
+                <CustomImage/>
+                <CustomImage/>
+                <CustomImage/>
+                <CustomImage/>
+                <CustomImage/>
+                <CustomImage/>
+                <CustomImage/>
+                <CustomImage/>
             </div>
         </div>
     )
